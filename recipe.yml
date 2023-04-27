@@ -42,3 +42,4 @@ flatpaks:
   - com.valvesoftware.Steam
   - net.lutris.Lutris
   - com.visualstudio.code
+  - com.discordapp.Discord
