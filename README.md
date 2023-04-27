@@ -1,4 +1,4 @@
-# Starting point
+# silveblue-mug
 
 [![build-ublue](https://github.com/chandrahmuki/silveblue-mug/actions/workflows/build.yml/badge.svg)](https://github.com/chandrahmuki/silveblue-mug/actions/workflows/build.yml)
 
