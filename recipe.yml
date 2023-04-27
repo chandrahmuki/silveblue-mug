@@ -30,10 +30,8 @@ rpms:
 # If you leave this empty you can use yafti for post-boot installation
 flatpaks:
   - org.mozilla.firefox
-  - org.mozilla.Thunderbird
   - com.mattjakeman.ExtensionManager
-  - org.libreoffice.LibreOffice
-  - org.gnome.DejaDup
-  - org.gustavoperedo.FontDownloader
   - com.github.tchx84.Flatseal
-  - io.github.celluloid_player.Celluloid
+  - com.valvesoftware.Steam
+  - net.lutris.Lutris
+  - com.visualstudio.code
