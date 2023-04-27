@@ -28,6 +28,10 @@ COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 COPY build.sh /tmp/build.sh
 RUN chmod +x /tmp/build.sh && /tmp/build.sh
 
+# copy and run Apx_install script
+COPY build.sh /tmp/Apx_install.sh
+RUN chmod +x /tmp/Apx_install.sh && /tmp/Apx_install.sh
+
 # clean up and finalize container build
 RUN rm -rf \
         /tmp/* \
