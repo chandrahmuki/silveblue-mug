@@ -25,7 +25,6 @@ rpms:
   - python3-pip
   - kitty
   - git
-  - go
   - make
   - util-linux-user
   - fish
