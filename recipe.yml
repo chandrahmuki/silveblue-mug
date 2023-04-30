@@ -22,13 +22,12 @@ scripts:
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
   # needed for yafti (the first boot installer) (remove if you're not using yafti)
-  - python3-pip
+  - go
   - kitty
   - git
   - make
   - util-linux-user
   - fish
-  - langpacks-en
   
   # add your own below
 # These Flatpaks (from flathub) will be available for install on boot
