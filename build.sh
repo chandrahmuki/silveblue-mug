@@ -20,4 +20,4 @@ done
 echo "---"
 
 rpm-ostree override remove mesa-va-drivers-freeworld
-rpm-ostree override remove golang --install go 
+rpm-ostree override remove go --install go 
