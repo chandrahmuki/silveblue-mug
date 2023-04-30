@@ -22,7 +22,6 @@ scripts:
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
   # needed for yafti (the first boot installer) (remove if you're not using yafti)
-  - go
   - kitty
   - git
   - make
