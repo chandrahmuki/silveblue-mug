@@ -19,6 +19,8 @@ for pkg in $(echo -e "$rpm_packages"); do \
 done
 echo "---"
 
+rpm-ostree override remove mesa-va-drivers-freeworld
+
 # install yafti to install flatpaks on first boot, https://github.com/ublue-os/yafti
 pip install --prefix=/usr yafti
 
