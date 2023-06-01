@@ -19,5 +19,5 @@ for pkg in $(echo -e "$rpm_packages"); do \
 done
 echo "---"
 
-rpm-ostree override remove mesa-va-drivers-freeworld
+rpm-ostree override remove mesa-va-drivers-freeworld firefox firefox-langpacks
 
