@@ -11,8 +11,6 @@ ARG RECIPE
 # see issue #28 (https://github.com/ublue-os/startingpoint/issues/28)
 COPY etc /usr/etc
 # uncomment below line if you need to put config files in /usr/
-# COPY usr /usr
-RUN wget -O /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:shdwchn10:xpadneo.repo https://copr.fedorainfracloud.org/coprs/shdwchn10/xpadneo/repo/fedora-$(rpm -E %fedora)/shdwchn10-xpadneo-fedora-$(rpm -E %fedora).repo
 # copy scripts
 RUN mkdir /tmp/scripts
 COPY scripts /tmp/scripts
