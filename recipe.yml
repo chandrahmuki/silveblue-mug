@@ -21,22 +21,32 @@ scripts:
 # These rpms will be installed from the fedora repository
 # using rpm-ostree and will be preinstalled in the final image
 rpms:
+
+
+repos:
+https://copr.fedorainfracloud.org/coprs/tmsp/xpadneo/repo/fedora-$(rpm -E %fedora)/tmsp-xpadneo-fedora-$(rpm -E %fedora).repo
+
+install:
   # needed for yafti (the first boot installer) (remove if you're not using yafti)
   - kitty
   - git
   - make
   - util-linux-user
   - fish
+  - rofi
+  - xpadneo
+  
+  
+  remove:
+    # Remove the native firefox (from Fedora) in favor of the Flatpak.
+    - firefox
+    - firefox-langpacks
+    - gnome-tour
+    - toolbox
+    - mesa-va-drivers-freeworld
   
   # add your own below
 # These Flatpaks (from flathub) will be available for install on boot
 # this is just an example selection.
 # If you leave this empty you can use yafti for post-boot installation
 flatpaks:
-  - org.mozilla.firefox
-  - com.mattjakeman.ExtensionManager
-  - com.github.tchx84.Flatseal
-  - com.valvesoftware.Steam
-  - net.lutris.Lutris
-  - com.visualstudio.code
-  - com.discordapp.Discord
