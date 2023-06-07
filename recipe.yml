@@ -37,13 +37,13 @@ install:
   - xpadneo
   
   
-  remove:
+remove:
     # Remove the native firefox (from Fedora) in favor of the Flatpak.
-    - firefox
-    - firefox-langpacks
-    - gnome-tour
-    - toolbox
-    - mesa-va-drivers-freeworld
+   - firefox
+   - firefox-langpacks
+   - gnome-tour
+   - toolbox
+   - mesa-va-drivers-freeworld
   
   # add your own below
 # These Flatpaks (from flathub) will be available for install on boot
