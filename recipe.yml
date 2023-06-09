@@ -64,6 +64,7 @@ rpm:
     - util-linux-user
     - fish
     - xpadneo
+    - go
 
 
   # These RPMs will be removed from the system image. This step happens during
