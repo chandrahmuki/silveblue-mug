@@ -75,7 +75,6 @@ rpm:
     - firefox-langpacks
     - gnome-tour
     - toolbox
-    - cheese
     - mesa-va-drivers-freeworld
     
 
