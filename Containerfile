@@ -1,4 +1,4 @@
-# This is the Containerfile for your custom image.
+# This is the Containerfile for your custom image. 
 
 # It takes in the recipe, version, and base image as arguments,
 # all of which are provided by build.yml when doing builds
@@ -23,8 +23,6 @@ ARG RECIPE=./recipe.yml
 # for manual overrides and editing by the machine's admin AFTER installation!
 # See issue #28 (https://github.com/ublue-os/startingpoint/issues/28).
 COPY usr /usr
-# temporary hack for hardcoded repos: https://github.com/ublue-os/startingpoint/issues/97
-COPY etc /etc
 
 # Copy the recipe that we're building.
 COPY ${RECIPE} /usr/share/ublue-os/recipe.yml
@@ -38,6 +36,6 @@ COPY scripts /tmp/scripts
 
 # Run the build script, then clean up temp files and finalize container build.
 RUN chmod +x /tmp/scripts/build.sh && \
-    /tmp/scripts/build.sh && \
-    rm -rf /tmp/* /var/* && \
-    ostree container commit
+        /tmp/scripts/build.sh && \
+        rm -rf /tmp/* /var/* && \
+        ostree container commit
