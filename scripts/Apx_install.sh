@@ -1,7 +1,9 @@
 #!/bin/bash
 
- Download the precompiled binary  
-curl -LO https://github.com/Vanilla-OS/apx/releases/download/1.8.2/apx_Linux_x86_64.tar.gz  
+#Download the precompiled binary of Apx
+curl -LO https://github.com/Vanilla-OS/apx/releases/download/1.8.2/apx_Linux_x86_64.tar.gz
+#install distrobox
+curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sh -s -- --prefix ~/.local
 
 # Extract the binary  
 tar -xzvf apx_Linux_x86_64.tar.gz  
