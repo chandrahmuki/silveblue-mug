@@ -33,7 +33,7 @@ scripts:
   # "Post" scripts run at the end of the build process.
   post:
     # Automatically runs script files within "scripts/post/".
-    #autorun.sh
+    - Apx_install.sh
     # Manually listed scripts.
     # - example_post.sh
 
