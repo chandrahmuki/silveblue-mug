@@ -75,6 +75,7 @@ rpm:
     - gnome-tour
     - toolbox
     - mesa-va-drivers-freeworld
+    - distrobox
     
 
 
