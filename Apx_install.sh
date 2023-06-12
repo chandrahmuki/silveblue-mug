@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# Clone the repository
-git clone --recursive https://github.com/Vanilla-OS/apx.git
+ Download the precompiled binary  
+curl -LO https://github.com/Vanilla-OS/apx/releases/download/1.8.2/apx_Linux_x86_64.tar.gz  
 
-# Enter the directory
-cd apx
+# Extract the binary  
+tar -xzvf apx_Linux_x86_64.tar.gz  
 
-# Build apx
-make
+# Move the binary to the local bin directory
+mv apx_Linux_x86_64/apx $HOME/.local/bin
 
-# Install the binary
-make install PREFIX=$HOME/.local
+# Remove the downloaded tar file and the extracted directory
+rm -rf apx_Linux_x86_64.tar.gz apx_Linux_x86_64
 
 # Check if the path is already in the PATH variable
 if [[ ":$PATH:" != *":$HOME/.local/bin:"* ]]; then
