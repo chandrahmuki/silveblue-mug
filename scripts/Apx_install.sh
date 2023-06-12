@@ -5,7 +5,8 @@ curl -LO https://github.com/Vanilla-OS/apx/releases/download/1.8.2/apx_Linux_x86
 
 # Extract the binary  
 tar -xzvf apx_Linux_x86_64.tar.gz  
-
+#create the directory as it doesnt exist yet on a new system
+mkdir -p $HOME/.local/bin
 # Move the binary to the local bin directory
 mv apx_Linux_x86_64/apx $HOME/.local/bin
 
