@@ -69,13 +69,13 @@ The files `/etc/profile.d/ublue-firstboot.sh` and `/etc/skel.d/.config/autostart
 To rebase an existing Silverblue/Kinoite installation to the latest build:
 
 ```
-sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/chandrahmuki/silveblue-mug:latest
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/chandrahmuki/silvermug:latest
 ```
 
 This repository builds date tags as well, so if you want to rebase to a particular day's build:
 
 ```
-sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/chandrahmuki/silveblue-mug:20230403
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/chandrahmuki/silvermug:20230403
 ```
 
 The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `release.yml`, so you won't get accidentally updated to the next major version.
