@@ -10,7 +10,7 @@ tar -xzvf apx_Linux_x86_64.tar.gz
 #create the directory as it doesnt exist yet on a new system
 mkdir -p $HOME/.local/bin
 # Move the binary to the local bin directory
-mv apx_Linux_x86_64/apx $HOME/.local/bin
+mv apx $HOME/.local/bin
 
 # Remove the downloaded tar file and the extracted directory
 rm -rf apx_Linux_x86_64.tar.gz apx_Linux_x86_64
